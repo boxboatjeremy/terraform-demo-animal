@@ -1,5 +1,3 @@
 resource "random_pet" "server" {
-  keepers = {
-    length = 4
-  }
+  length = 4
 }
