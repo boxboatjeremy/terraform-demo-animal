@@ -1,5 +1,5 @@
 resource "random_integer" "count" {
-  min = 2 
+  min = 3
   max = 20
   keepers = {
     uuid = uuid()
