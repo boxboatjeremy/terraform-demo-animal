@@ -18,13 +18,3 @@ resource "aws_instance" "basic" {
   ami           = "ami-62131702"
   instance_type = "t3.nano"
 }
-
-
-import "tfrun"
-import "decimal"
-
-delta_monthly_cost = decimal.new(tfrun.cost_estimate.delta_monthly_cost)
-
-main = rule {
-    delta_monthly_cost.less_than(100)
-}
