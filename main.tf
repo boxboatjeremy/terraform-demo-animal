@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "random_integer" "count" {
-  min = 4
+  min = 5
   max = 20
   keepers = {
     uuid = uuid()
